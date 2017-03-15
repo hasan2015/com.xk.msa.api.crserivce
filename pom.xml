@@ -106,7 +106,7 @@
 		<!--com.xk.msa -->
 		<dependency>
 			<groupId>com.xk.msa.framework</groupId>
-			<artifactId>msa-framework</artifactId>
+			<artifactId>com.xk.msa.framework</artifactId>
 			<version>1.0.0</version>
 		</dependency>
 	</dependencies>
