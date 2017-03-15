@@ -18,9 +18,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @SpringBootApplication(scanBasePackages = "com.xk.msa")
 public class Application {
-	@RequestMapping(name = "HelloService", method = RequestMethod.GET, path = "/hello")
+	@RequestMapping(name = "CRHelloService", method = RequestMethod.GET, path = "/hello")
 	public String hello() {
-		return "hello";
+		return "hello CR";
 	}
  
 	public static void main(String[] args) {
