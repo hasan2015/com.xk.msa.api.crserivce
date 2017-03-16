@@ -5,9 +5,6 @@ package com.xk.msa.api.cr;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
 
 /**
  * 
@@ -15,14 +12,10 @@ import org.springframework.web.bind.annotation.RestController;
  * @date 2017年3月14日 下午8:00:12
  *
  */
-@RestController
+//@EnableDiscoveryClient
 @SpringBootApplication(scanBasePackages = "com.xk.msa")
 public class Application {
-	@RequestMapping(name = "CRHelloService", method = RequestMethod.GET, path = "/hello")
-	public String hello() {
-		return "hello CR";
-	}
- 
+
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
 	}
